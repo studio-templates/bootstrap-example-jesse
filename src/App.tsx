@@ -45,7 +45,7 @@ function App() {
                     <Badge pill bg="primary">
                         Primary
                     </Badge>
-                    <Badge pill bg="primary">
+                    <Badge pill={true} bg="secondary">
                         Primary
                     </Badge>
                 </div>
