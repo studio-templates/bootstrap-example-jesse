@@ -20,6 +20,7 @@
       "trigger": ["checkout", "pull", "setup"]
     }
   },
+  "assetLibraries": ["@wixc3/bootstrap-boards"],
   "styling": {
     "solution": "scss modules"
   },
