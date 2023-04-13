@@ -13,6 +13,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vite-plugin-svgr": "^2.4.0",
+    "bootstrap": "^5.2.1",
     "react-bootstrap": "^2.4.0",
     "@wixc3/bootstrap-boards": "^0.1.0"
   },
