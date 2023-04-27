@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Carousel from 'react-bootstrap/Carousel';
+import Classnames from 'classnames';
 
 function App() {
     const [index, setIndex] = useState(0);
@@ -26,7 +27,8 @@ function App() {
             <Carousel activeIndex={index} onSelect={setIndex} slide={false}>
                 <Carousel.Item>
                     <Image
-                        src="https://static.wixstatic.com/media/68d3a9_e54bc05fc07647e189baeee0441eb104~mv2.jpg"
+                        sizes={'880'}
+                        src="https://static.wixstatic.com/media/ff6bf6_41086d5ad29048078d9269648858d341~mv2.png"
                         alt="First Slide"
                         fluid
                     />
@@ -37,7 +39,7 @@ function App() {
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image
-                        src="https://static.wixstatic.com/media/68d3a9_e54bc05fc07647e189baeee0441eb104~mv2.jpg"
+                        src="https://static.wixstatic.com/media/ff6bf6_41086d5ad29048078d9269648858d341~mv2.png"
                         alt="Second Slide"
                         fluid
                     />
@@ -49,7 +51,7 @@ function App() {
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image
-                        src="https://static.wixstatic.com/media/68d3a9_e54bc05fc07647e189baeee0441eb104~mv2.jpg"
+                        src="https://static.wixstatic.com/media/ff6bf6_41086d5ad29048078d9269648858d341~mv2.png"
                         alt="Third Slide"
                         fluid
                     />
@@ -61,29 +63,29 @@ function App() {
                 </Carousel.Item>
             </Carousel>
             <div className={styles.content}>
-                <div className={styles['flex-row']}>
-                    <Badge pill bg="primary">
+                <div className={Classnames(styles['flex-row'], styles['bg-for-badges'])}>
+                    <Badge pill bg="light" text="dark">
                         Primary
                     </Badge>
-                    <Badge pill bg="info">
+                    <Badge pill bg="light" text="dark">
                         Primary
                     </Badge>
-                    <Badge pill bg="primary">
+                    <Badge pill bg="light" text="dark">
                         Primary
                     </Badge>
-                    <Badge pill bg="primary">
+                    <Badge pill bg="light" text="dark">
                         Primary
                     </Badge>
-                    <Badge pill bg="primary">
+                    <Badge pill bg="light" text="dark">
                         Primary
                     </Badge>
-                    <Badge pill bg="primary">
+                    <Badge pill bg="light" text="dark">
                         Primary
                     </Badge>
-                    <Badge pill bg="primary">
+                    <Badge pill bg="light" text="dark">
                         Primary
                     </Badge>
-                    <Badge pill={true} bg="secondary">
+                    <Badge pill bg="light" text="dark">
                         Primary
                     </Badge>
                 </div>
