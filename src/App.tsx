@@ -1,11 +1,17 @@
 import { useState } from 'react';
 import styles from './App.module.scss';
-import Image from 'react-bootstrap/Image';
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Image from 'react-bootstrap/Image';
+import Carousel from 'react-bootstrap/Carousel';
 
 function App() {
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex: number) => {
+        setIndex(selectedIndex);
+    };
     const [radioValue, setRadioValue] = useState('1');
 
     const radios = [
@@ -17,12 +23,44 @@ function App() {
 
     return (
         <div className={styles.App}>
+            <Carousel activeIndex={index} onSelect={setIndex} slide={false}>
+                <Carousel.Item>
+                    <Image
+                        src="https://static.wixstatic.com/media/68d3a9_e54bc05fc07647e189baeee0441eb104~mv2.jpg"
+                        alt="First Slide"
+                        fluid
+                    />
+                    <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Image
+                        src="https://static.wixstatic.com/media/68d3a9_e54bc05fc07647e189baeee0441eb104~mv2.jpg"
+                        alt="Second Slide"
+                        fluid
+                    />
+
+                    <Carousel.Caption>
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Image
+                        src="https://static.wixstatic.com/media/68d3a9_e54bc05fc07647e189baeee0441eb104~mv2.jpg"
+                        alt="Third Slide"
+                        fluid
+                    />
+
+                    <Carousel.Caption>
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
             <div className={styles.content}>
-                <Image
-                    src="https://static.wixstatic.com/media/68d3a9_e54bc05fc07647e189baeee0441eb104~mv2.jpg"
-                    alt="descriptive text"
-                    fluid
-                />
                 <div className={styles['flex-row']}>
                     <Badge pill bg="primary">
                         Primary
@@ -48,10 +86,6 @@ function App() {
                     <Badge pill={true} bg="secondary">
                         Primary
                     </Badge>
-                </div>
-                <div>
-                    <p>This is a title</p>
-                    <p>This is a paragraph.</p>
                 </div>
                 <div className={styles['flex-row']}>
                     <Card>

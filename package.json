@@ -15,7 +15,7 @@
     "vite-plugin-svgr": "^2.4.0",
     "bootstrap": "^5.2.1",
     "react-bootstrap": "^2.4.0",
-    "@wixc3/bootstrap-boards": "^0.1.0"
+    "@wixc3/bootstrap-boards": "^0.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.32",
