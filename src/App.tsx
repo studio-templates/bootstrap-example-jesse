@@ -24,7 +24,7 @@ function App() {
 
     return (
         <div className={styles.App}>
-            <Carousel activeIndex={index} onSelect={setIndex} slide={false}>
+            <Carousel activeIndex={index} onSelect={setIndex} slide={false} className={styles.carousel}>
                 <Carousel.Item>
                     <Image
                         sizes={'880'}
@@ -39,7 +39,7 @@ function App() {
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image
-                        src="https://static.wixstatic.com/media/ff6bf6_41086d5ad29048078d9269648858d341~mv2.png"
+                        src="https://static.wixstatic.com/media/ff6bf6_d522ee5f79944b419ef0182cbd4a0fef~mv2.png"
                         alt="Second Slide"
                         fluid
                     />
@@ -51,7 +51,7 @@ function App() {
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image
-                        src="https://static.wixstatic.com/media/ff6bf6_41086d5ad29048078d9269648858d341~mv2.png"
+                        src="https://static.wixstatic.com/media/ff6bf6_0a9b4b8da128497f840962f9c50e44d4~mv2.png"
                         alt="Third Slide"
                         fluid
                     />
@@ -63,33 +63,39 @@ function App() {
                 </Carousel.Item>
             </Carousel>
             <div className={styles.content}>
-                <div className={Classnames(styles['flex-row'], styles['bg-for-badges'])}>
-                    <Badge pill bg="light" text="dark">
-                        Primary
+                <div
+                    className={Classnames(
+                        styles['flex-row'],
+                        styles['bg-for-badges'],
+                        styles.badges
+                    )}
+                >
+                    <Badge pill bg="light" text="dark" className={styles['my-badge']}>
+                        PRIMARY
                     </Badge>
                     <Badge pill bg="light" text="dark">
-                        Primary
+                        PRIMARY
                     </Badge>
                     <Badge pill bg="light" text="dark">
-                        Primary
+                        PRIMARY
                     </Badge>
                     <Badge pill bg="light" text="dark">
-                        Primary
+                        PRIMARY
                     </Badge>
                     <Badge pill bg="light" text="dark">
-                        Primary
+                        PRIMARY
                     </Badge>
                     <Badge pill bg="light" text="dark">
-                        Primary
+                        PRIMARY
                     </Badge>
                     <Badge pill bg="light" text="dark">
-                        Primary
+                        PRIMARY
                     </Badge>
                     <Badge pill bg="light" text="dark">
-                        Primary
+                        PRIMARY
                     </Badge>
                 </div>
-                <div className={styles['flex-row']}>
+                <div className={Classnames(styles['flex-row'], styles['diff-layout'])}>
                     <Card>
                         <Card.Img
                             variant="top"
