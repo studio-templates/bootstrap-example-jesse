@@ -95,40 +95,29 @@ function App() {
                 </Carousel.Item>
             </Carousel>
             <div className={styles.content}>
-                <div
-                    className={Classnames(
-                        styles['flex-row'],
-                        styles['bg-for-badges'],
-                        styles.badges
-                    )}
-                >
-                    <Badge pill bg="light" text="dark" className={styles['my-badge']}>
+                <div className={Classnames(styles['flex-row'], styles.badges)}>
+                    <Badge pill bg="dark" text="light">
                         PRIMARY
                     </Badge>
-                    <Badge pill bg="light" text="dark">
+                    <Badge pill bg="dark" text="light">
                         PRIMARY
                     </Badge>
-                    <Badge pill bg="light" text="dark">
+                    <Badge pill bg="dark" text="light">
                         PRIMARY
                     </Badge>
-                    <Badge pill bg="light" text="dark">
+                    <Badge pill bg="dark" text="light">
                         PRIMARY
                     </Badge>
-                    <Badge pill bg="light" text="dark">
+                    <Badge pill bg="dark" text="light">
                         PRIMARY
                     </Badge>
-                    <Badge pill bg="light" text="dark">
-                        PRIMARY
-                    </Badge>
-                    <Badge pill bg="light" text="dark">
-                        PRIMARY
-                    </Badge>
-                    <Badge pill bg="light" text="dark">
+
+                    <Badge pill bg="dark" text="light">
                         PRIMARY
                     </Badge>
                 </div>
-                <div className={styles['font-style']}>
-                    <h3 className={styles['font-style']}>Heading 1</h3>
+                <div className={Classnames(styles['font-style'], styles['text-layout'])}>
+                    <h3>Heading 1</h3>
                     <p className={styles['text-width']}>
                         People on Meetup have fostered community, learned new skills, started
                         businesses, and made life-long friends. Learn how.
