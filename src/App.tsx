@@ -6,6 +6,10 @@ import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Carousel from 'react-bootstrap/Carousel';
 import Classnames from 'classnames';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 
 function App() {
     const [index, setIndex] = useState(0);
@@ -24,7 +28,35 @@ function App() {
 
     return (
         <div className={styles.App}>
-            <Carousel activeIndex={index} onSelect={setIndex} slide={false} className={styles.carousel}>
+            <Navbar className={styles['navbar-width']}>
+                <Container>
+                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav>
+                            <Nav.Link href="#home">Home</Nav.Link>
+                            <Nav.Link href="#link">Link</Nav.Link>
+                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">
+                                    Another action
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action/3.4">
+                                    Separated link
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+            <Carousel
+                activeIndex={index}
+                onSelect={setIndex}
+                slide={false}
+                className={styles.carousel}
+            >
                 <Carousel.Item>
                     <Image
                         sizes={'880'}
@@ -94,6 +126,13 @@ function App() {
                     <Badge pill bg="light" text="dark">
                         PRIMARY
                     </Badge>
+                </div>
+                <div>
+                    <h3 className={styles['font-style']}>Heading 1</h3>
+                    <p className={styles['text-width']}>
+                        People on Meetup have fostered community, learned new skills, started
+                        businesses, and made life-long friends. Learn how.
+                    </p>
                 </div>
                 <div className={Classnames(styles['flex-row'], styles['diff-layout'])}>
                     <Card>
