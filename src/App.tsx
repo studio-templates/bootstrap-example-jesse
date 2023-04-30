@@ -127,7 +127,7 @@ function App() {
                         PRIMARY
                     </Badge>
                 </div>
-                <div>
+                <div className={styles['font-style']}>
                     <h3 className={styles['font-style']}>Heading 1</h3>
                     <p className={styles['text-width']}>
                         People on Meetup have fostered community, learned new skills, started
