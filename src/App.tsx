@@ -127,7 +127,7 @@ function App() {
                     <Card>
                         <Card.Img
                             variant="top"
-                            src="https://static.wixstatic.com/media/68d3a9_3a56618c342d4f86bfff387937c50bb2~mv2.jpg"
+                            src="https://static.wixstatic.com/media/ff6bf6_b35da181dc7f4e9480802618b23e8253~mv2.png"
                         />
                         <Card.Body className={styles['font-style']}>
                             <Card.Title>Card Title</Card.Title>
@@ -141,7 +141,21 @@ function App() {
                     <Card>
                         <Card.Img
                             variant="top"
-                            src="https://static.wixstatic.com/media/68d3a9_3a56618c342d4f86bfff387937c50bb2~mv2.jpg"
+                            src="https://static.wixstatic.com/media/ff6bf6_b35da181dc7f4e9480802618b23e8253~mv2.png"
+                        />
+                        <Card.Body className={styles['font-style']}>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                    <Card>
+                        <Card.Img
+                            variant="top"
+                            src="https://static.wixstatic.com/media/ff6bf6_48cfdd8060e54b9cb7227fadb86cf0e0~mv2.png"
                         />
                         <Card.Body className={styles['font-style']}>
                             <Card.Title>Card Title</Card.Title>
