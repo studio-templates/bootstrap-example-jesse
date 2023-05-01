@@ -10,5 +10,5 @@ export interface A2Props {
  * To create custom component templates, see https://help.codux.com/kb/en/article/configuration-for-a-2s-and-templates
  */
 export const A2 = ({ className }: A2Props) => {
-    return <div className={classNames(styles.root, className)}>A2</div>;
+    return <div className={classNames(styles.root, className)}>A</div>;
 };
