@@ -26,15 +26,19 @@
   flex-direction: column;
   align-items: center;
 }
-.bg-for-badges {
-  background-color: transparent;
-  background-image: linear-gradient(0deg, rgba(55, 57, 64, 0.95) 19%, rgba(255, 255, 255, 0) 100%);
+.bg-section {
+  background-color: #222222;
+  background-image: none;
   background-position: 0% 0%;
   background-size: 100% 100%;
   background-repeat: repeat;
   background-attachment: scroll;
   background-origin: padding-box;
   background-clip: border-box;
+  margin: 0px;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
 }
 .badges {
   margin: 0px;
@@ -61,6 +65,8 @@
 }
 .font-style {
   font-family: futura;
+  font-weight: 400;
+  font-size: 1rem;
 }
 .text-layout {
   margin-top: 30px;
@@ -78,4 +84,11 @@
   background-attachment: scroll;
   background-origin: padding-box;
   background-clip: border-box;
+  margin-right: 0px;
+  margin-left: 0px;
+  justify-content: center;
+  justify-items: center;
+}
+.text-color {
+  color: #ffffff;
 }

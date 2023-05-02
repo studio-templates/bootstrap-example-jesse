@@ -10,6 +10,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 function App() {
     const [index, setIndex] = useState(0);
@@ -155,7 +157,7 @@ function App() {
                     <Card>
                         <Card.Img
                             variant="top"
-                            src="https://static.wixstatic.com/media/ff6bf6_48cfdd8060e54b9cb7227fadb86cf0e0~mv2.png"
+                            src="https://static.wixstatic.com/media/ff6bf6_b35da181dc7f4e9480802618b23e8253~mv2.png"
                         />
                         <Card.Body className={styles['font-style']}>
                             <Card.Title>Card Title</Card.Title>
@@ -169,7 +171,7 @@ function App() {
                     <Card>
                         <Card.Img
                             variant="top"
-                            src="https://static.wixstatic.com/media/68d3a9_3a56618c342d4f86bfff387937c50bb2~mv2.jpg"
+                            src="https://static.wixstatic.com/media/ff6bf6_48cfdd8060e54b9cb7227fadb86cf0e0~mv2.png"
                         />
                         <Card.Body className={styles['font-style']}>
                             <Card.Title>Card Title</Card.Title>
@@ -177,11 +179,25 @@ function App() {
                                 Some quick example text to build on the card title and make up the
                                 bulk of the card's content.
                             </Card.Text>
-                            <Button variant="primary" className={styles['font-style']}>
-                                Go somewhere
-                            </Button>
+                            <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
                     </Card>
+                </div>
+                <div
+                    className={Classnames(
+                        styles['flex-row'],
+                        styles['bg-section'],
+                        styles['text-color']
+                    )}
+                >
+                    <span>About Us</span>
+                    <span>The company</span>
+                    <span>Privacy Policy</span>
+                    <span>Our App</span>
+                    <InputGroup className={styles['text-layout']}>
+                        <Form.Control placeholder="Username" aria-label="Recipient's username" />
+                        <InputGroup.Text id="addon">@example.com</InputGroup.Text>
+                    </InputGroup>
                 </div>
             </div>
         </div>
