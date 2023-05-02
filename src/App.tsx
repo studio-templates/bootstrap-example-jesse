@@ -194,7 +194,7 @@ function App() {
                     <span>The company</span>
                     <span>Privacy Policy</span>
                     <span>Our App</span>
-                    <InputGroup className={styles['text-layout']}>
+                    <InputGroup className={Classnames(styles['text-layout'], styles.shaked)}>
                         <Form.Control placeholder="Username" aria-label="Recipient's username" />
                         <InputGroup.Text id="addon">@example.com</InputGroup.Text>
                     </InputGroup>
