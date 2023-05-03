@@ -165,7 +165,7 @@ function App() {
                                 Some quick example text to build on the card title and make up the
                                 bulk of the card's content.
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Button variant="dark">Go somewhere</Button>
                         </Card.Body>
                     </Card>
                     <Card>
@@ -184,20 +184,26 @@ function App() {
                     </Card>
                 </div>
                 <div
-                    className={Classnames(
-                        styles['flex-row'],
-                        styles['bg-section'],
-                        styles['text-color']
-                    )}
+                    className={Classnames(styles['bg-section'], styles['text-color'], styles.mika)}
                 >
-                    <span>About Us</span>
-                    <span>The company</span>
-                    <span>Privacy Policy</span>
-                    <span>Our App</span>
-                    <InputGroup className={Classnames(styles['text-layout'], styles.shaked)}>
-                        <Form.Control placeholder="Username" aria-label="Recipient's username" />
-                        <InputGroup.Text id="addon">@example.com</InputGroup.Text>
-                    </InputGroup>
+                    <div className={styles['footer-flex']}>
+                        <span>About Us</span>
+                        <span>Privacy Policy</span>
+                        <span>Our App</span>
+                        <span>The company</span>
+                    </div>
+                    <div className={styles['join-our']}>
+                        join our newsletter
+                        <InputGroup className={Classnames(styles['text-layout'], styles.shaked)}>
+                            <Form.Control
+                                placeholder="Username"
+                                aria-label="Recipient's username"
+                            />
+                            <InputGroup.Text id="addon" className={styles['form-button']}>
+                                @example.com
+                            </InputGroup.Text>
+                        </InputGroup>
+                    </div>
                 </div>
             </div>
         </div>
